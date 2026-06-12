@@ -1,0 +1,53 @@
+{
+  "name": "@hm-soft/korean-money",
+  "version": "0.1.0",
+  "description": "원화 콤마 포맷·파싱, 한글 금액 변환(일금 …원정), 부가세 10% 계산/역산 유틸 (의존성 0)",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "korea",
+    "korean",
+    "won",
+    "krw",
+    "currency",
+    "money",
+    "vat",
+    "부가세",
+    "금액",
+    "원화",
+    "hmsoft"
+  ],
+  "author": "HMSOFT",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hongmuk/hm-soft-korean-money.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hongmuk/hm-soft-korean-money/issues"
+  },
+  "homepage": "https://github.com/hongmuk/hm-soft-korean-money#readme"
+}
